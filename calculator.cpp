@@ -5,7 +5,7 @@ int main() {
     bool running = true;
     int x;
     while (running) {
-        std::cout << "1 -- seštevanje | 2 -- odštevanje | 0 -- EXIT" << std::endl;
+        std::cout << "1 -- seštevanje | 2 -- odštevanje | 3 -- množenje | 0 -- EXIT" << std::endl;
         std::cin >> x;
         double num1;
         double num2;
@@ -23,6 +23,13 @@ int main() {
                 std::cout << "\nnum2: ";
                 std::cin >> num2;
                 std::cout << num1-num2 << std::endl;
+                break;
+            case 3:
+                std::cout << "num1: ";
+                std::cin >> num1;
+                std::cout << "\nnum2: ";
+                std::cin >> num2;
+                std::cout << num1*num2 << std::endl;
                 break;
             case 0:
                 running = false;
