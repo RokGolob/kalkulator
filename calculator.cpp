@@ -11,13 +11,16 @@ double deljenje(double num1, double num2) {
 double kvadratni_koren(double num) {
     return std::sqrt(num);
 }
+double potenciranje(double num) {
+    return num*num;
+}
 
 
 int main() {
     bool running = true;
     int x;
     while (running) {
-        std::cout << "1 -- seštevanje || 2 -- odštevanje || 3 -- množenje || 4 -- deljenje || 5 -- kvadratni koren || 0 -- EXIT" << std::endl;
+        std::cout << "1 -- seštevanje || 2 -- odštevanje || 3 -- množenje || 4 -- deljenje || 5 -- kvadratni koren || 6 -- potenciranje || 0 -- EXIT" << std::endl;
 
         std::cin >> x;
         double num1;
@@ -55,6 +58,11 @@ int main() {
                 std::cout << "num: ";
                 std::cin >> num1;
                 std::cout << kvadratni_koren << std::endl;
+                break;
+            case 6:
+                std::cout << "num: ";
+                std::cin >> num1;
+                std::cout << potenciranje(num1) << std::endl;
                 break;
             case 0:
                 running = false;
