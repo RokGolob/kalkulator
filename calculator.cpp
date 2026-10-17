@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 double deljenje(double num1, double num2) {
     if (num2 == 0) {
@@ -7,13 +8,16 @@ double deljenje(double num1, double num2) {
     }
     return num1/num2;
 }
+double kvadratni_koren(double num) {
+    return std::sqrt(num);
+}
 
 
 int main() {
     bool running = true;
     int x;
     while (running) {
-        std::cout << "1 -- seštevanje || 2 -- odštevanje || 3 -- množenje || 4 -- deljenje || 0 -- EXIT" << std::endl;
+        std::cout << "1 -- seštevanje || 2 -- odštevanje || 3 -- množenje || 4 -- deljenje || 5 -- kvadratni koren || 0 -- EXIT" << std::endl;
 
         std::cin >> x;
         double num1;
@@ -46,6 +50,11 @@ int main() {
                 std::cout << "\nnum2: ";
                 std::cin >> num2;
                 std::cout << deljenje(num1, num2) << std::endl;
+                break;
+            case 5:
+                std::cout << "num: ";
+                std::cin >> num1;
+                std::cout << kvadratni_koren << std::endl;
                 break;
             case 0:
                 running = false;
