@@ -1,5 +1,13 @@
 #include <iostream>
 
+double deljenje(double num1, double num2) {
+    if (num2 == 0) {
+        std::cout << "Deljenje z 0!" << std::endl;
+        return;
+    }
+    return num1/num2;
+}
+
 
 int main() {
     bool running = true;
@@ -30,6 +38,13 @@ int main() {
                 std::cout << "\nnum2: ";
                 std::cin >> num2;
                 std::cout << num1*num2 << std::endl;
+                break;
+            case 4:
+                std::cout << "num1: ";
+                std::cin >> num1;
+                std::cout << "\nnum2: ";
+                std::cin >> num2;
+                std::cout << deljenje(num1, num2) << std::endl;
                 break;
             case 0:
                 running = false;
