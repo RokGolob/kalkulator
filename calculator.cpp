@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-
+// funkcija za deljenje
 double deljenje(double num1, double num2) {
     if (num2 == 0) {
         std::cout << "Deljenje z 0!" << std::endl;
@@ -8,14 +8,18 @@ double deljenje(double num1, double num2) {
     }
     return num1/num2;
 }
+// funkcija za kvadratni koren
 double kvadratni_koren(double num) {
     return std::sqrt(num);
 }
+// funkcija za potenciranje
 double potenciranje(double num) {
     return num*num;
 }
 
-
+/*
+    Calculator
+*/
 int main() {
     bool running = true;
     int x;
