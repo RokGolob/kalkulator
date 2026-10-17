@@ -14,6 +14,7 @@ int main() {
     int x;
     while (running) {
         std::cout << "1 -- seštevanje || 2 -- odštevanje || 3 -- množenje || 4 -- deljenje || 0 -- EXIT" << std::endl;
+
         std::cin >> x;
         double num1;
         double num2;
