@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-//tu je neke glih tolko da se revert pokaže kak dela :)
+
 
 // funkcija za deljenje
 double deljenje(double num1, double num2) {
