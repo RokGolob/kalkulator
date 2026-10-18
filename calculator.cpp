@@ -7,7 +7,7 @@
 double deljenje(double num1, double num2) {
     if (num2 == 0) {
         std::cout << "Deljenje z 0!" << std::endl;
-        return;
+        return NAN;
     }
     return num1/num2;
 }
@@ -29,7 +29,7 @@ double absolutna_vrednost(double num) {
 
 double procent_od(double procent, double num) {
     double new_procent = procent/100;
-    return num * num;
+    return new_procent * num;
 }
 //funkcija za izpis izbora
 void izpis_izbir() {
@@ -79,7 +79,7 @@ int main() {
             case 5:
                 std::cout << "num: ";
                 std::cin >> num1;
-                std::cout << kvadratni_koren << std::endl;
+                std::cout << kvadratni_koren(num1) << std::endl;
                 break;
             case 6:
                 std::cout << "num: ";
