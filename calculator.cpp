@@ -16,6 +16,13 @@ double kvadratni_koren(double num) {
 double potenciranje(double num) {
     return num*num;
 }
+//funkcija za absolutno vrednost
+double absolutna_vrednost(double num) {
+    if (num < 0) {
+        num = num * (-1);
+    }
+    return num;
+}
 
 /*
     Calculator
@@ -24,7 +31,7 @@ int main() {
     bool running = true;
     int x;
     while (running) {
-        std::cout << "1 -- seštevanje || 2 -- odštevanje || 3 -- množenje || 4 -- deljenje || 5 -- kvadratni koren || 6 -- potenciranje || 0 -- EXIT" << std::endl;
+        std::cout << "1 -- seštevanje || 2 -- odštevanje || 3 -- množenje || 4 -- deljenje || 5 -- kvadratni koren || 6 -- potenciranje || 7 -- absolutna vrednost || 0 -- EXIT" << std::endl;
 
         std::cin >> x;
         double num1;
@@ -68,6 +75,10 @@ int main() {
                 std::cin >> num1;
                 std::cout << potenciranje(num1) << std::endl;
                 break;
+            case 7:
+                std::cout << "num: ";
+                std::cin >> num1;
+                std::cout << absolutna_vrednost(num1) << std::endl;
             case 0:
                 running = false;
                 break;
