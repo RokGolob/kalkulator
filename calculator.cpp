@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
-
-
+//To je za test cherry picka A
+// To je za test cherry picka B
 // funkcija za deljenje
 double deljenje(double num1, double num2) {
     if (num2 == 0) {
