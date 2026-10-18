@@ -26,8 +26,13 @@ double absolutna_vrednost(double num) {
     return num;
 }
 
+double procent_od(double procent, double num) {
+    double new_procent = procent/100;
+    return num * num;
+}
+
 void izpis_izbir() {
-    std::cout << "1 -- seštevanje || 2 -- odštevanje || 3 -- množenje || 4 -- deljenje || 5 -- kvadratni koren || 6 -- potenciranje || 7 -- absolutna vrednost || 0 -- EXIT" << std::endl;
+    std::cout << "1 -- seštevanje || 2 -- odštevanje || 3 -- množenje || 4 -- deljenje || 5 -- kvadratni koren || 6 -- potenciranje || 7 -- absolutna vrednost || 8 -- procent od || 0 -- EXIT" << std::endl;
 }
 
 /*
@@ -84,6 +89,13 @@ int main() {
                 std::cout << "num: ";
                 std::cin >> num1;
                 std::cout << absolutna_vrednost(num1) << std::endl;
+            case 8:
+                std::cout << "procent: ";
+                std::cin >> num1;
+                std::cout << "\nnum2: ";
+                std::cin >> num2;
+                std::cout << procent_od(num1, num2) << std::endl;
+                break;
             case 0:
                 running = false;
                 break;
