@@ -1,0 +1,20 @@
+name: Build kalkulator
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prenesi kodo
+        uses: actions/checkout@v4
+
+      - name: Prevedi calculator.cpp
+        run: g++ -Wall -Wextra calculator.cpp -o calculator
+
+      - name: Zaženi program
+        run: echo "Prevajanje uspelo"
