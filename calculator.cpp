@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cmath>
+//
+//
 // funkcija za deljenje
 double deljenje(double num1, double num2) {
     if (num2 == 0) {
