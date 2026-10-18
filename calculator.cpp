@@ -90,6 +90,7 @@ int main() {
                 std::cout << "num: ";
                 std::cin >> num1;
                 std::cout << absolutna_vrednost(num1) << std::endl;
+                break;
             case 8:
                 std::cout << "procent: ";
                 std::cin >> num1;
