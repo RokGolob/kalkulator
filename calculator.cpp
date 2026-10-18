@@ -26,6 +26,10 @@ double absolutna_vrednost(double num) {
     return num;
 }
 
+void izpis_izbir() {
+    std::cout << "1 -- seštevanje || 2 -- odštevanje || 3 -- množenje || 4 -- deljenje || 5 -- kvadratni koren || 6 -- potenciranje || 7 -- absolutna vrednost || 0 -- EXIT" << std::endl;
+}
+
 /*
     Calculator
 */
@@ -33,8 +37,7 @@ int main() {
     bool running = true;
     int x;
     while (running) {
-        std::cout << "1 -- seštevanje || 2 -- odštevanje || 3 -- množenje || 4 -- deljenje || 5 -- kvadratni koren || 6 -- potenciranje || 7 -- absolutna vrednost || 0 -- EXIT" << std::endl;
-
+        izpis_izbir();
         std::cin >> x;
         double num1;
         double num2;
